@@ -1,0 +1,34 @@
+/*====================================
+   ===[ System Typography ]===
+======================================*/
+
+@mixin display-x-large($line-height: 65px) {
+    font-size: 50px;
+    line-height: $line-height;
+    font-weight: bold;
+}
+
+@mixin display-large() {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: bold;
+}
+
+@mixin display-small($line-height: 28px) {
+    font-size: 20px;
+    line-height: $line-height;
+    font-weight: normal;
+}
+
+
+.display-x-large {
+    @include display-x-large();
+}
+
+.display-large {
+    @include display-large();
+}
+
+.display-small {
+    @include display-small();
+}

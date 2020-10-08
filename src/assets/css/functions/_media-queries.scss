@@ -1,0 +1,164 @@
+/*====================================
+	===[ Define the mixins ]===
+======================================*/
+
+@mixin screen-laptop {    
+	@media (min-width: 1366px) and (max-width: 1440px) {
+		.main-container{
+			.heading-block{
+				h1{
+					font-size: 46px !important;
+					line-height: 60px !important;
+				}
+			}
+			.cta-section{
+				h2{
+					font-size: 46px !important;
+					line-height: 60px !important;
+				}
+			}
+		}
+	}
+}
+
+@mixin screen-sm-laptop {    
+	@media (min-width: 1200px) and (max-width: 1280px) {
+		.main-container{
+			.heading-block{
+				h1{
+					font-size: 42px !important;
+					line-height: 54px !important;
+				}
+			}
+			.cta-section{
+				h2{
+					width: 80%;
+					font-size: 42px !important;
+					line-height: 54px !important;
+				}
+			}
+		}
+		footer{
+			.foot-menu{
+				.fm-block{
+					.fm-block-item{
+						span{
+							font-size: 18px;
+						}
+						a{
+							font-size: 42px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@mixin screen-tablet {    
+	@media (min-width: 1024px) and (max-width: 1184px) {
+		.main-container{
+			.heading-block{
+				h1{
+					width: 80%;
+					font-size: 38px !important;
+					line-height: 44px !important;
+				}
+			}
+			.cta-section{
+				h2{
+					width: 85%;
+					font-size: 38px !important;
+					line-height: 44px !important;
+				}
+			}
+		}
+		footer{
+			.foot-menu{
+				.fm-block{
+					.fm-block-item{
+						span{
+							font-size: 18px;
+						}
+						a{
+							font-size: 42px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@mixin screen-mob-landscape {    
+	@media (min-width: 768px) and (max-width: 1014px) {
+		.main-container{
+			.heading-block{
+				h1{
+					width: 90%;
+					font-size: 32px !important;
+					line-height: 42px !important;
+				}
+			}
+			.cta-section{
+				height: 300px;
+				h2{
+					width: 88%;
+					font-size: 30px !important;
+					line-height: 42px !important;
+				}
+			}
+		}
+		footer{
+			.foot-menu{
+				.fm-block{
+					.fm-block-item{
+						span{
+							font-size: 16px;
+						}
+						a{
+							font-size: 34px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@mixin screen-mob-portrait {    
+	@media (min-width: 320px) and (max-width: 760px) {
+		.main-container{
+			padding-top: 60px;
+			.heading-block{
+				h1{
+					width: 90%;
+					font-size: 28px !important;
+					line-height: 32px !important;
+				}
+			}
+			.cta-section{
+				height: 300px;
+				h2{
+					width: 88%;
+					font-size: 24px !important;
+					line-height: 30px !important;
+				}
+			}
+		}
+		footer{
+			.foot-menu{
+				.fm-block{
+					.fm-block-item{
+						span{
+							font-size: 15px;
+						}
+						a{
+							font-size: 26px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

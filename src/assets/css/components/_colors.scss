@@ -1,0 +1,32 @@
+/*====================================
+		===[ System Primary Color ]===
+======================================*/
+
+$dark-main-color: #000000;
+$gray-main-color:#b6b6b6;
+$primary-green:#26e990;
+$white: #fff;
+
+.cl-dark-main-color {
+    color: $dark-main-color !important;
+}
+
+.bg-dark-main-color {
+    background: $dark-main-color !important;
+}
+
+.cl-gray-main-color {
+    color: $gray-main-color !important;
+}
+
+.bg-gray-main-color {
+    background: $gray-main-color !important;
+}
+
+.cl-primary-green {
+    color: $primary-green !important;
+}
+
+.bg-primary-green {
+    background: $primary-green !important;
+}
