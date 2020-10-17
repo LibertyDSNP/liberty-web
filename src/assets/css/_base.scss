@@ -76,7 +76,8 @@ header{
         }
     }
     .cta-section{
-        background-image: url('../images/bg-overlay.jpg');
+        /*background-image: url('../images/bg-overlay.jpg');*/
+        background-color: black;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: 0 0;
@@ -178,6 +179,12 @@ footer{
             color: $white;
             font-weight: bold;
         }
+        a:link, a:visited{
+            color: $white;
+        }
+        a:hover, a:active{
+            border-bottom: 1px solid;
+        }
     }
 }
 
@@ -188,7 +195,8 @@ footer{
     justify-content: center;
     height: 500px;
     margin-top: 48px;
-    background-image: url('../images/blog-image.jpg');
+    /*background-image: url('../images/blog-image.jpg');*/
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 0 center;
