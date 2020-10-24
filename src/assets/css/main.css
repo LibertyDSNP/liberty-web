@@ -1774,9 +1774,16 @@ header .container-fluid .navbar .navbar-brand img {
   max-width: 80%;
   margin: 0 auto;
 }
-#lets-connect form input {
+#lets-connect form input, #lets-connect form textarea {
   display: block;
   width: 100%;
+  border-radius: 0;
+  border: 0.5px solid;
+  padding: 5px 3px;
+}
+#lets-connect form #message {
+  resize: vertical;
+  height: 30vh;
 }
 #lets-connect form .btn {
   width: 100px;
@@ -1813,6 +1820,9 @@ header .container-fluid .navbar .navbar-brand img {
   margin-bottom: 5vh;
   list-style-type: decimal;
   list-style-position: outside;
+}
+#about .container hr {
+  border: 1px solid #26EA90;
 }
 
 @media (min-width: 1200px) {
