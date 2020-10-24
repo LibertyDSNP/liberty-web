@@ -1768,6 +1768,20 @@ header .container-fluid .navbar .navbar-brand img {
   margin-bottom: 0;
 }
 
+#lets-connect form {
+  display: flex;
+  flex-direction: column;
+}
+#lets-connect form input {
+  display: block;
+}
+#lets-connect form .btn {
+  width: 100px;
+  background: black;
+  color: white;
+  border-radius: 0;
+}
+
 @media (min-width: 1200px) {
   footer .head .container {
     max-width: 900px;

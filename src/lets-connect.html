@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
-<body>
+<body id="lets-connect">
 
 <header>
     <div class="container-fluid">
@@ -38,12 +38,21 @@
 </div>
 <div class="blog-info">
     <div class="container">
-        <!--<span>Braxton, 10.20</span>-->
         <h1>Let's Connect</h1>
-        <p>
-            We welcome your feedback, and we are building infrastructure to support communication—it’s coming
-            soon. Meanwhile, you can reach us at <a href="mailto:hello@projectliberty.io">hello@projectliberty.io</a>.
-        </p>
+
+        <form action="mailto:hello@projectliberty.io" method="post" enctype="text/plain">
+            <label>Name:
+                <input name="name">
+            </label>
+            <label>Email:
+                <input name="email">
+            </label>
+            <label>Message:
+                <input name="message">
+            </label>
+            <input type="submit" value="SUBMIT" class="btn">
+            <input type="reset" value="RESET" class="btn">
+        </form>
   </div>
 </div>
 
