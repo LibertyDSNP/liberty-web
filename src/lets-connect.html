@@ -11,6 +11,8 @@
     <link rel="preload" href="assets/webfonts/favorit/Favorit-Light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/webfonts/favorit/Favorit-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="dependencies/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="dependencies/slick/slick-theme.css"/>
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
@@ -51,7 +53,7 @@
                 <input name="message">
             </label>
             <input type="submit" value="SUBMIT" class="btn">
-            <input type="reset" value="RESET" class="btn">
+            <!--<input type="reset" value="RESET" class="btn">-->
         </form>
   </div>
 </div>
@@ -71,7 +73,6 @@
                 </div>
             </div>
         </div>
-
         <div class="fm-block">
             <div class="container">
                 <div class="fm-block-item">
@@ -80,7 +81,6 @@
                 </div>
             </div>
         </div>
-
         <div class="fm-block">
             <div class="container">
                 <div class="fm-block-item">
@@ -94,7 +94,6 @@
         <p>©2020 Liberty 3.0 LLC  \
             <a href="mailto:hello@projectliberty.io">Contact</a>  \
             <a href="https://www.unfinishedlabs.io" target=”_blank”>Unfinished Labs</a>
-        </p>
     </div>
 </footer>
 
@@ -102,6 +101,29 @@
 <script src="dependencies/bootstrap/js/popper.min.js"></script>
 <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
 <script src="dependencies/parallax/parallax.min.js"></script>
+<script type="text/javascript" src="dependencies/slick/slick.min.js"></script>
+<script>
+    var slick = $('.heading-questions');
+    slick.slick({
+        dots: false,
+        infinite: true,
+        speed: 400,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        pauseOnHover: false,
+        prevArrow: false,
+        nextArrow: false
+    });
+    slick.on('wheel', (function(e) {
+        e.preventDefault();
+        if (e.originalEvent.deltaY < 0) {
+            $(this).slick('slickNext');
+        } else {
+            $(this).slick('slickPrev');
+        }
+    }));
+</script>
 </body>
 
 </html>

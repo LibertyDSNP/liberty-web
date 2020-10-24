@@ -1771,9 +1771,12 @@ header .container-fluid .navbar .navbar-brand img {
 #lets-connect form {
   display: flex;
   flex-direction: column;
+  max-width: 80%;
+  margin: 0 auto;
 }
 #lets-connect form input {
   display: block;
+  width: 100%;
 }
 #lets-connect form .btn {
   width: 100px;

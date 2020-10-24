@@ -129,9 +129,13 @@ header{
     form{
         display: flex;
         flex-direction: column;
+        max-width: 80%;
+        margin: 0 auto;
         input{
             display: block;
+            width: 100%;
         }
+
         .btn{
             width: 100px;
             background: black;
@@ -140,6 +144,7 @@ header{
         }
     }
 }
+
 footer{
     .head{
         .container{
