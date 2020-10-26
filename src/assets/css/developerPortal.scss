@@ -1,0 +1,89 @@
+.DevPortal__img {
+  background-image: url("../images/Hero_Road.jpg");
+  height: 500px;
+  width: 100%;
+  margin-top: 28px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 767px) {
+    background-attachment:scroll;
+    height: 350px;
+    width: 100%;
+    margin-top: 18px;
+  }
+}
+
+.DevPortal__articleH1 {
+  text-align: center;
+}
+
+.DevPortal__articleBlock {
+  @include body__content_width;
+  margin: 0 auto;
+  margin-top: -325px;
+  @media (max-width: 991px) {
+    margin-top: -350px;
+  }
+  @media (max-width: 767px) {
+    margin-top: -250px;
+  }
+}
+
+.DevPortal__articleIcon {
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  width: 72px;
+  height: 72px;
+  z-index: 1;
+
+  @media (max-width: 991px) {
+    width: 60px;
+    height: 60px;
+  }
+  @media (max-width: 767px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.DevPortal__article {
+  background-color: white;
+  padding: 60px 32px 0 32px;
+  position: relative;
+  top: -36px;
+
+  @media (max-width: 991px) {
+    top: -30px;
+    padding: 45px 22px 0 22px;
+  }
+  @media (max-width: 767px) {
+    top: -25px;
+    padding: 30px 12px 0 12px;
+  }
+
+  p {
+    font-family: 'Courier New';
+  }
+}
+
+.DevPortal__articleListItem {
+  margin-bottom: 20px;
+}
+
+.DevPortal__articleLink {
+  color: black;
+  text-decoration: underline;
+  hyphens: auto;
+
+  &:hover {
+    color: $primary_green;
+  }
+}
+
+.DevPortal__articleHr {
+  border: 1px solid $primary-green;
+}

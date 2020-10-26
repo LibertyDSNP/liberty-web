@@ -1,0 +1,139 @@
+$primary-green: #26e990;
+
+$desktop__subtitle: 16px;
+$desktop__paragraph: 20px;
+$desktop__subHeading: 30px;
+$desktop__nav: 22px;
+$desktop__h2: 40px;
+$desktop__h1: 40px;
+
+$laptop__subtitle: 14px;
+$laptop__paragraph: 20px;
+$laptop__subHeading: 26px;
+$laptop__nav: 18px;
+$laptop__h2: 34px;
+$laptop__h1: 34px;
+
+$mobile__subtitle: 12px;
+$mobile__paragraph: 18px;
+$mobile__subHeading: 22px;
+$mobile__nav: 25px;
+$mobile__h2: 28px;
+$mobile__h1: 28px;
+
+@mixin body__h1{
+  font-size: $desktop__h1;
+  font-weight: bold;
+  margin-bottom: 32px;
+  @media (min-width: 992px) and (max-width: 1280px) {
+    font-size: $laptop__h1;
+  }
+  @media (max-width: 991px) {
+    font-size: $mobile__h1;
+  }
+}
+
+@mixin body__h2 {
+  font-size: $desktop__h2;
+  font-weight: bold;
+  margin: 20px 0;
+  @media (min-width: 992px) and (max-width: 1280px) {
+    font-size: $laptop__h2;
+  }
+  @media (max-width: 991px) {
+    font-size: $mobile__h2;
+  }
+}
+
+@mixin body__subHeading {
+  font-size: $desktop__subHeading;
+  font-weight: bold;
+  line-height: 40px;
+  margin-bottom: 16px;
+  @media (min-width: 1001px) and (max-width: 1280px) {
+    font-size: $laptop__subHeading;
+    line-height: 36px;
+  }
+  @media (max-width: 1000px) {
+    font-size: $mobile__subHeading;
+    line-height: 30px;
+  }
+}
+
+@mixin body__rightNav {
+  font-size: $desktop__nav;
+  font-weight: bold;
+  margin-bottom: 16px;
+  line-height: 48px;
+  text-transform: uppercase;
+  text-align: left;
+  @media (min-width: 1541px){
+    line-height: 55px;
+  }
+  @media (min-width: 992px) and (max-width: 1280px) {
+    font-size: $laptop__nav;
+    line-height: 45px;
+  }
+}
+@mixin body__p {
+  font-size: $desktop__paragraph;
+  line-height: 36px;
+  margin-bottom: 20px;
+  @media (min-width: 992px) and (max-width: 1280px) {
+    font-size: $laptop__paragraph;
+    line-height: 33px;
+  }
+  @media (max-width: 991px) {
+    font-size: $mobile__paragraph;
+    line-height: 30px;
+  }
+}
+@mixin body__subtitle {
+  font-size: $desktop__subtitle;
+  line-height: 20px;
+  @media (min-width: 992px) and (max-width: 1280px) {
+    font-size: $laptop__subtitle;
+  }
+  @media (max-width: 991px) {
+    font-size: $mobile__subtitle;
+  }
+}
+
+@mixin body__smallCaption {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+  a{
+    color: black;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+p {
+  @include body__p;
+  a {
+    color: $primary-green;
+  }
+  a:hover {
+    color: $primary-green;
+    text-decoration: underline;
+  }
+}
+
+.body__h1 {
+  @include body__h1;
+}
+
+.body__h2 {
+  @include body__h2;
+}
+
+.body__subHeading {
+  @include body__subHeading;
+}
+
+.body__smallCaption {
+  @include body__smallCaption;
+}

@@ -1,13 +1,11 @@
-/*====================================
-		===[ System Components files ]===
-======================================*/
-
-@import "./components/fonts";
-@import "./components/variables";
-@import "./components/colors";
-@import "./components/typography";
-@import "./components/buttons";
-@import "./functions/mixins";
-@import "./functions/cheatsheet";
-@import "./functions/media-queries";
 @import "./base";
+@import "./typeography";
+
+@import "../css/about";
+@import "../css/contact";
+@import "../css/index";
+@import "../css/developerPortal";
+@import "../css/privacy";
+@import "./navigation";
+@import "./footer";
+

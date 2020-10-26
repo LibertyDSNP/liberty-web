@@ -1,0 +1,18 @@
+.footer__block {
+  background-color: black;
+  padding: 28px 0;
+  text-align: center;
+}
+
+.footer__p {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0;
+  @include body__smallCaption;
+  a {
+    color: white;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
