@@ -126,9 +126,6 @@ header{
     }
 }
 #lets-connect{
-    .blog-info{
-        margin-top: 200px;
-    }
     form{
         display: flex;
         flex-direction: column;
@@ -156,6 +153,7 @@ header{
 #about{
     .blog-img{
         background-image: url('../images/Hero_Road.jpg');
+        background-size: cover;
     }
     .container{
         article{
