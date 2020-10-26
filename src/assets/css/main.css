@@ -1928,7 +1928,7 @@ footer .copyright a:hover, footer .copyright a:active {
   padding: 60px 32px;
   margin-bottom: 40px;
   position: relative;
-  margin-top: -100px;
+  margin-top: -250px;
 }
 @media (min-width: 1200px) {
   .blog-info .container {
@@ -2062,6 +2062,15 @@ footer .copyright a:hover, footer .copyright a:active {
   }
 }
 @media (min-width: 320px) and (max-width: 760px) {
+  #about .blog-img {
+    background-attachment: scroll;
+    height: 200px;
+    margin-top: 18px;
+  }
+
+  body header {
+    padding: 18px 0 0 0;
+  }
   body .main-container {
     padding-top: 0;
   }
