@@ -153,7 +153,6 @@ header{
 #about{
     .blog-img{
         background-image: url('../images/Hero_Road.jpg');
-        background-size: cover;
     }
     .container{
         article{
@@ -192,8 +191,9 @@ header{
         ol{
             max-width: 80%;
             margin: 0 auto;
+            font-weight:bold;
             li{
-                margin-bottom: 5vh;
+                margin-bottom: 3vh;
                 list-style-type: decimal;
                 list-style-position: outside;
             }
@@ -267,7 +267,7 @@ footer{
 }
 
 .blog-img{
-    width: 100%;
+    //width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -275,6 +275,10 @@ footer{
     margin-top: 48px;
     /*background-image: url('../images/blog-image.jpg');*/
     background-color: black;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 0 center;
