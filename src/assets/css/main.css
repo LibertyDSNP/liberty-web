@@ -1705,7 +1705,7 @@ header .container-fluid .navbar .navbar-brand img {
 
 .main-container .heading-block {
   text-align: center;
-  padding: 90px 0 120px 0;
+  padding: 110px 0 130px 0;
 }
 .main-container .heading-block .item:nth-last-child(2) h1 {
   width: 65%;
@@ -1766,30 +1766,6 @@ header .container-fluid .navbar .navbar-brand img {
 }
 .main-container .body-desc p:last-child {
   margin-bottom: 0;
-}
-
-#lets-connect form {
-  display: flex;
-  flex-direction: column;
-  max-width: 80%;
-  margin: 0 auto;
-}
-#lets-connect form input, #lets-connect form textarea {
-  display: block;
-  width: 100%;
-  border-radius: 0;
-  border: 0.5px solid;
-  padding: 5px 3px;
-}
-#lets-connect form #message {
-  resize: vertical;
-  height: 30vh;
-}
-#lets-connect form .btn {
-  width: 100px;
-  background: black;
-  color: white;
-  border-radius: 0;
 }
 
 #about .blog-img {
@@ -1987,6 +1963,14 @@ footer .copyright a:hover, footer .copyright a:active {
   }
 
   .main-container .heading-block {
+    padding: 180px 0 220px 0;
+  }
+
+  #about .blog-img {
+    height: 750px;
+  }
+  #about .container {
+    margin-top: -400px;
     padding: 120px 0 180px 0;
   }
 
@@ -1995,10 +1979,6 @@ footer .copyright a:hover, footer .copyright a:active {
   }
   #about .container #article-header p {
     font-size: 32px;
-  }
-
-  #lets-connect .blog-info {
-    margin-top: 350px;
   }
 }
 @media (min-width: 1281px) and (max-width: 1440px) {
@@ -2010,10 +1990,6 @@ footer .copyright a:hover, footer .copyright a:active {
     font-size: 46px !important;
     line-height: 60px !important;
   }
-
-  #lets-connect .blog-info {
-    margin-top: 350px;
-  }
 }
 @media (min-width: 1185px) and (max-width: 1280px) {
   .main-container .heading-block h1 {
@@ -2024,10 +2000,6 @@ footer .copyright a:hover, footer .copyright a:active {
     width: 80%;
     font-size: 42px !important;
     line-height: 54px !important;
-  }
-
-  #lets-connect .blog-info {
-    margin-top: 350px;
   }
 
   footer .foot-menu .fm-block .fm-block-item span {
@@ -2047,10 +2019,6 @@ footer .copyright a:hover, footer .copyright a:active {
     width: 85%;
     font-size: 38px !important;
     line-height: 44px !important;
-  }
-
-  #lets-connect .blog-info {
-    margin-top: 350px;
   }
 
   footer .foot-menu .fm-block .fm-block-item span {
@@ -2073,10 +2041,6 @@ footer .copyright a:hover, footer .copyright a:active {
     width: 88%;
     font-size: 30px !important;
     line-height: 42px !important;
-  }
-
-  #lets-connect .blog-info {
-    margin-top: 350px;
   }
 
   footer .foot-menu .fm-block .fm-block-item span {
