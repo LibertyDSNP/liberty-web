@@ -148,7 +148,17 @@
 
 @mixin screen-mob-portrait {    
 	@media (min-width: 320px) and (max-width: 760px) {
+		#about{
+			.blog-img{
+				background-attachment:scroll;
+				height: 200px;
+				margin-top: 18px;
+			}
+		}
 		body {
+			header{
+				padding: 18px 0 0 0;
+			}
 			.main-container {
 				padding-top: 0;
 
@@ -173,9 +183,6 @@
 			}
 			#connect-section{
 				padding-bottom: 100px;
-			}
-			.blog-img{
-				background-attachment:scroll;
 			}
 			.blog-info{
 				margin-top: 0;
