@@ -125,6 +125,84 @@ header{
         }
     }
 }
+#lets-connect{
+    form{
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        margin: 0 auto;
+        input, textarea{
+            display: block;
+            width: 100%;
+            border-radius: 0;
+            border: 0.5px solid;
+            padding: 5px 3px;
+        }
+        #message{
+            resize: vertical;
+            height: 30vh;
+        }
+        .btn{
+            width: 100px;
+            background: black;
+            color: white;
+            border-radius: 0;
+        }
+    }
+}
+#about{
+    .blog-img{
+        background-image: url('../images/Hero_Road.jpg');
+        background-size: cover;
+    }
+    .container{
+        article{
+            margin: 3%;
+            background-color: white;
+        }
+        #article-header{
+            h1{
+                text-align: left;
+                margin-bottom: 1vh;
+                padding-bottom: 0;
+            }
+            p{
+                font-size: 22pt;
+                line-height: 1.4;
+                margin-bottom: 2vh;
+            }
+        }
+        h2{
+            margin: 3vh 0;
+        }
+        #authors{
+            display: flex;
+            flex-direction: row;
+            span{
+                text-align: left;
+                margin: 25px 10vw 0 0;
+            }
+        }
+        #interjection{
+            font-size: x-large;
+            text-align: center;
+            max-width: 85%;
+            margin: 0 auto;
+        }
+        ol{
+            max-width: 80%;
+            margin: 0 auto;
+            li{
+                margin-bottom: 5vh;
+                list-style-type: decimal;
+                list-style-position: outside;
+            }
+        }
+        hr{
+            border: 1px solid #26EA90;
+        }
+    }
+}
 
 footer{
     .head{

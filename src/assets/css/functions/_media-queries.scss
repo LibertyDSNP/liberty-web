@@ -18,6 +18,11 @@
 				}
 			}
 		}
+		#lets-connect{
+			.blog-info{
+				margin-top: 200px;
+			}
+		}
 	}
 }
 
@@ -36,6 +41,11 @@
 					font-size: 42px !important;
 					line-height: 54px !important;
 				}
+			}
+		}
+		#lets-connect{
+			.blog-info{
+				margin-top: 200px;
 			}
 		}
 		footer{
@@ -71,6 +81,11 @@
 					font-size: 38px !important;
 					line-height: 44px !important;
 				}
+			}
+		}
+		#lets-connect{
+			.blog-info{
+				margin-top: 200px;
 			}
 		}
 		footer{
@@ -109,6 +124,11 @@
 				}
 			}
 		}
+		#lets-connect{
+			.blog-info{
+				margin-top: 200px;
+			}
+		}
 		footer{
 			.foot-menu{
 				.fm-block{
@@ -128,33 +148,65 @@
 
 @mixin screen-mob-portrait {    
 	@media (min-width: 320px) and (max-width: 760px) {
-		.main-container{
-			padding-top: 60px;
-			.heading-block{
-				h1{
-					width: 90%;
-					font-size: 28px !important;
-					line-height: 32px !important;
+		body {
+			.main-container {
+				padding-top: 0;
+
+				.heading-block {
+					padding: 90px 0 110px 0;
+					h1 {
+						width: 90%;
+						font-size: 28px !important;
+						line-height: 32px !important;
+					}
+				}
+
+				.cta-section {
+					height: 300px;
+
+					h2 {
+						width: 88%;
+						font-size: 24px !important;
+						line-height: 30px !important;
+					}
 				}
 			}
-			.cta-section{
-				height: 300px;
-				h2{
-					width: 88%;
-					font-size: 24px !important;
-					line-height: 30px !important;
-				}
+			#connect-section{
+				padding-bottom: 100px;
 			}
-		}
-		footer{
-			.foot-menu{
-				.fm-block{
-					.fm-block-item{
-						span{
-							font-size: 15px;
+			.blog-info{
+				margin-top: 0;
+				.container {
+					margin: 0 auto;
+					padding-left: 2%;
+					padding-right: 2%;
+					hyphens: manual;
+					article {
+						margin: 1%;
+						#article-header{
+							h1{
+								font-size: 32px;
+							}
+							p{
+								i{
+									font-size: 24px;
+								}
+							}
 						}
-						a{
-							font-size: 26px;
+					}
+				}
+			}
+			footer {
+				.foot-menu {
+					.fm-block {
+						.fm-block-item {
+							span {
+								font-size: 15px;
+							}
+
+							a {
+								font-size: 26px;
+							}
 						}
 					}
 				}
