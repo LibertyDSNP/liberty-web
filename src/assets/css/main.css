@@ -2093,6 +2093,9 @@ footer .copyright a:hover, footer .copyright a:active {
   body #connect-section {
     padding-bottom: 100px;
   }
+  body .blog-img {
+    background-attachment: scroll;
+  }
   body .blog-info {
     margin-top: 0;
   }
