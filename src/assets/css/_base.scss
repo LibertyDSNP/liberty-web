@@ -61,7 +61,7 @@ header{
 .main-container{
     .heading-block{
         text-align: center;
-        padding: 90px 0 120px 0;
+        padding: 110px 0 130px 0;
         .item{
             &:nth-last-child(2){
                 h1{
@@ -122,31 +122,6 @@ header{
             &:last-child{
                 margin-bottom: 0;
             }
-        }
-    }
-}
-#lets-connect{
-    form{
-        display: flex;
-        flex-direction: column;
-        max-width: 80%;
-        margin: 0 auto;
-        input, textarea{
-            display: block;
-            width: 100%;
-            border-radius: 0;
-            border: 0.5px solid;
-            padding: 5px 3px;
-        }
-        #message{
-            resize: vertical;
-            height: 30vh;
-        }
-        .btn{
-            width: 100px;
-            background: black;
-            color: white;
-            border-radius: 0;
         }
     }
 }
