@@ -1794,7 +1794,6 @@ header .container-fluid .navbar .navbar-brand img {
 
 #about .blog-img {
   background-image: url("../images/Hero_Road.jpg");
-  background-size: cover;
 }
 #about .container article {
   margin: 3%;
@@ -1830,9 +1829,10 @@ header .container-fluid .navbar .navbar-brand img {
 #about .container ol {
   max-width: 80%;
   margin: 0 auto;
+  font-weight: bold;
 }
 #about .container ol li {
-  margin-bottom: 5vh;
+  margin-bottom: 3vh;
   list-style-type: decimal;
   list-style-position: outside;
 }
@@ -1897,7 +1897,6 @@ footer .copyright a:hover, footer .copyright a:active {
 }
 
 .blog-img {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1905,6 +1904,10 @@ footer .copyright a:hover, footer .copyright a:active {
   margin-top: 48px;
   /*background-image: url('../images/blog-image.jpg');*/
   background-color: black;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 0 center;
@@ -2080,6 +2083,9 @@ footer .copyright a:hover, footer .copyright a:active {
   }
   body #connect-section {
     padding-bottom: 100px;
+  }
+  body .blog-img {
+    background-attachment: scroll;
   }
   body .blog-info {
     margin-top: 0;
