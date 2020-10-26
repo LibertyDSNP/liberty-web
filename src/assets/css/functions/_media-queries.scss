@@ -1,9 +1,40 @@
 /*====================================
 	===[ Define the mixins ]===
 ======================================*/
-
-@mixin screen-laptop {    
-	@media (min-width: 1366px) and (max-width: 1440px) {
+@mixin screen-desktop {
+	@media (min-width: 1441px){
+			header {
+				padding: 48px 0 0 0;
+			}
+			.blog-img{
+				margin-top: 48px;
+			}
+			.main-container {
+				.heading-block {
+					padding: 120px 0 180px 0;
+				}
+			}
+			#about{
+				.container{
+					#article-header{
+						h1{
+							font-size: 48px;
+						}
+						p{
+							font-size: 32px;
+						}
+					}
+				}
+			}
+			#lets-connect{
+				.blog-info{
+					margin-top: 350px;
+				}
+			}
+		}
+}
+@mixin screen-laptop {
+	@media (min-width: 1281px) and (max-width: 1440px) {
 		.main-container{
 			.heading-block{
 				h1{
@@ -20,14 +51,14 @@
 		}
 		#lets-connect{
 			.blog-info{
-				margin-top: 200px;
+				margin-top: 350px;
 			}
 		}
 	}
 }
 
 @mixin screen-sm-laptop {    
-	@media (min-width: 1200px) and (max-width: 1280px) {
+	@media (min-width: 1185px) and (max-width: 1280px) {
 		.main-container{
 			.heading-block{
 				h1{
@@ -45,7 +76,7 @@
 		}
 		#lets-connect{
 			.blog-info{
-				margin-top: 200px;
+				margin-top: 350px;
 			}
 		}
 		footer{
@@ -66,7 +97,7 @@
 }
 
 @mixin screen-tablet {    
-	@media (min-width: 1024px) and (max-width: 1184px) {
+	@media (min-width: 1025px) and (max-width: 1184px) {
 		.main-container{
 			.heading-block{
 				h1{
@@ -85,7 +116,7 @@
 		}
 		#lets-connect{
 			.blog-info{
-				margin-top: 200px;
+				margin-top: 350px;
 			}
 		}
 		footer{
@@ -106,7 +137,7 @@
 }
 
 @mixin screen-mob-landscape {    
-	@media (min-width: 768px) and (max-width: 1014px) {
+	@media (min-width: 768px) and (max-width: 1024px) {
 		.main-container{
 			.heading-block{
 				h1{
@@ -126,7 +157,7 @@
 		}
 		#lets-connect{
 			.blog-info{
-				margin-top: 200px;
+				margin-top: 350px;
 			}
 		}
 		footer{
@@ -147,7 +178,7 @@
 }
 
 @mixin screen-mob-portrait {    
-	@media (min-width: 320px) and (max-width: 760px) {
+	@media (min-width: 320px) and (max-width: 767px) {
 		#about{
 			.blog-img{
 				background-attachment:scroll;
@@ -181,11 +212,7 @@
 					}
 				}
 			}
-			#connect-section{
-				padding-bottom: 100px;
-			}
 			.blog-info{
-				margin-top: 0;
 				.container {
 					margin: 0 auto;
 					padding-left: 2%;
@@ -205,6 +232,9 @@
 						}
 					}
 				}
+			}
+			#connect-section{
+				margin-top: 60px;
 			}
 			footer {
 				.foot-menu {

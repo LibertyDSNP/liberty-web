@@ -40,7 +40,7 @@ textarea {
 }
 
 header{
-    padding: 48px 0 0 0;
+    padding: 28px 0 0 0;
     .container-fluid{
         padding: 0;
         .navbar{
@@ -61,7 +61,7 @@ header{
 .main-container{
     .heading-block{
         text-align: center;
-        padding: 150px 0 180px 0;
+        padding: 90px 0 120px 0;
         .item{
             &:nth-last-child(2){
                 h1{
@@ -156,7 +156,7 @@ header{
     }
     .container{
         article{
-            margin: 3%;
+            margin: 0 3%;
             background-color: white;
         }
         #article-header{
@@ -164,9 +164,10 @@ header{
                 text-align: left;
                 margin-bottom: 1vh;
                 padding-bottom: 0;
+                font-size: 26pt;
             }
             p{
-                font-size: 22pt;
+                font-size: 18pt;
                 line-height: 1.4;
                 margin-bottom: 2vh;
             }
@@ -199,7 +200,7 @@ header{
             }
         }
         hr{
-            border: 1px solid #26EA90;
+            border: 1px solid $primary-green;
         }
     }
 }
@@ -272,7 +273,7 @@ footer{
     align-items: center;
     justify-content: center;
     height: 500px;
-    margin-top: 48px;
+    margin-top: 28px;
     /*background-image: url('../images/blog-image.jpg');*/
     background-color: black;
     background-size: cover;
@@ -300,7 +301,7 @@ footer{
         padding: 60px 32px;
         margin-bottom: 40px;
         position: relative;
-        margin-top: -250px;
+        margin-top: -300px;
         @media (min-width: 1200px){
             max-width: 900px;
         }
@@ -350,6 +351,7 @@ footer{
     }
 }
 
+@include screen-desktop();
 @include screen-laptop();
 @include screen-sm-laptop(); 
 @include screen-tablet(); 

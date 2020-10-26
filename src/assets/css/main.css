@@ -1685,7 +1685,7 @@ textarea {
 }
 
 header {
-  padding: 48px 0 0 0;
+  padding: 28px 0 0 0;
 }
 header .container-fluid {
   padding: 0;
@@ -1705,7 +1705,7 @@ header .container-fluid .navbar .navbar-brand img {
 
 .main-container .heading-block {
   text-align: center;
-  padding: 150px 0 180px 0;
+  padding: 90px 0 120px 0;
 }
 .main-container .heading-block .item:nth-last-child(2) h1 {
   width: 65%;
@@ -1796,16 +1796,17 @@ header .container-fluid .navbar .navbar-brand img {
   background-image: url("../images/Hero_Road.jpg");
 }
 #about .container article {
-  margin: 3%;
+  margin: 0 3%;
   background-color: white;
 }
 #about .container #article-header h1 {
   text-align: left;
   margin-bottom: 1vh;
   padding-bottom: 0;
+  font-size: 26pt;
 }
 #about .container #article-header p {
-  font-size: 22pt;
+  font-size: 18pt;
   line-height: 1.4;
   margin-bottom: 2vh;
 }
@@ -1837,7 +1838,7 @@ header .container-fluid .navbar .navbar-brand img {
   list-style-position: outside;
 }
 #about .container hr {
-  border: 1px solid #26EA90;
+  border: 1px solid #26e990;
 }
 
 @media (min-width: 1200px) {
@@ -1901,7 +1902,7 @@ footer .copyright a:hover, footer .copyright a:active {
   align-items: center;
   justify-content: center;
   height: 500px;
-  margin-top: 48px;
+  margin-top: 28px;
   /*background-image: url('../images/blog-image.jpg');*/
   background-color: black;
   background-size: cover;
@@ -1928,7 +1929,7 @@ footer .copyright a:hover, footer .copyright a:active {
   padding: 60px 32px;
   margin-bottom: 40px;
   position: relative;
-  margin-top: -250px;
+  margin-top: -300px;
 }
 @media (min-width: 1200px) {
   .blog-info .container {
@@ -1976,7 +1977,31 @@ footer .copyright a:hover, footer .copyright a:active {
   outline: none;
 }
 
-@media (min-width: 1366px) and (max-width: 1440px) {
+@media (min-width: 1441px) {
+  header {
+    padding: 48px 0 0 0;
+  }
+
+  .blog-img {
+    margin-top: 48px;
+  }
+
+  .main-container .heading-block {
+    padding: 120px 0 180px 0;
+  }
+
+  #about .container #article-header h1 {
+    font-size: 48px;
+  }
+  #about .container #article-header p {
+    font-size: 32px;
+  }
+
+  #lets-connect .blog-info {
+    margin-top: 350px;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1440px) {
   .main-container .heading-block h1 {
     font-size: 46px !important;
     line-height: 60px !important;
@@ -1987,10 +2012,10 @@ footer .copyright a:hover, footer .copyright a:active {
   }
 
   #lets-connect .blog-info {
-    margin-top: 200px;
+    margin-top: 350px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1280px) {
+@media (min-width: 1185px) and (max-width: 1280px) {
   .main-container .heading-block h1 {
     font-size: 42px !important;
     line-height: 54px !important;
@@ -2002,7 +2027,7 @@ footer .copyright a:hover, footer .copyright a:active {
   }
 
   #lets-connect .blog-info {
-    margin-top: 200px;
+    margin-top: 350px;
   }
 
   footer .foot-menu .fm-block .fm-block-item span {
@@ -2012,7 +2037,7 @@ footer .copyright a:hover, footer .copyright a:active {
     font-size: 42px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1184px) {
+@media (min-width: 1025px) and (max-width: 1184px) {
   .main-container .heading-block h1 {
     width: 80%;
     font-size: 38px !important;
@@ -2025,7 +2050,7 @@ footer .copyright a:hover, footer .copyright a:active {
   }
 
   #lets-connect .blog-info {
-    margin-top: 200px;
+    margin-top: 350px;
   }
 
   footer .foot-menu .fm-block .fm-block-item span {
@@ -2035,7 +2060,7 @@ footer .copyright a:hover, footer .copyright a:active {
     font-size: 42px;
   }
 }
-@media (min-width: 768px) and (max-width: 1014px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .main-container .heading-block h1 {
     width: 90%;
     font-size: 32px !important;
@@ -2051,7 +2076,7 @@ footer .copyright a:hover, footer .copyright a:active {
   }
 
   #lets-connect .blog-info {
-    margin-top: 200px;
+    margin-top: 350px;
   }
 
   footer .foot-menu .fm-block .fm-block-item span {
@@ -2061,7 +2086,7 @@ footer .copyright a:hover, footer .copyright a:active {
     font-size: 34px;
   }
 }
-@media (min-width: 320px) and (max-width: 760px) {
+@media (min-width: 320px) and (max-width: 767px) {
   #about .blog-img {
     background-attachment: scroll;
     height: 200px;
@@ -2090,12 +2115,6 @@ footer .copyright a:hover, footer .copyright a:active {
     font-size: 24px !important;
     line-height: 30px !important;
   }
-  body #connect-section {
-    padding-bottom: 100px;
-  }
-  body .blog-info {
-    margin-top: 0;
-  }
   body .blog-info .container {
     margin: 0 auto;
     padding-left: 2%;
@@ -2110,6 +2129,9 @@ footer .copyright a:hover, footer .copyright a:active {
   }
   body .blog-info .container article #article-header p i {
     font-size: 24px;
+  }
+  body #connect-section {
+    margin-top: 60px;
   }
   body footer .foot-menu .fm-block .fm-block-item span {
     font-size: 15px;
