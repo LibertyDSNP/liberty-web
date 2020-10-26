@@ -1,0 +1,28 @@
+.Contact__formBlock {
+  background-color: black;
+  padding-bottom: 20px;
+  margin: 20px 0;
+}
+
+.Contact__formH1 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding: 20px 0;
+}
+
+.Contact__form {
+  position: relative;
+  width: 50%;
+  max-width: 700px;
+  background-color: white;
+  padding: 16px;
+  margin: 20px auto;
+
+  @media (max-width: 991px) {
+    width: 60%;
+  }
+  @media (max-width: 767px) {
+    width: 80%;
+  }
+}
