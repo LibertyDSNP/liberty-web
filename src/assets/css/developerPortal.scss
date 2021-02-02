@@ -1,5 +1,5 @@
 .DevPortal__img {
-  background-image: url("../images/Hero_Road.jpg");
+  background-image: url("../images/Hero_Portal.jpg");
   height: 500px;
   width: 100%;
   margin-top: 28px;
@@ -72,12 +72,14 @@
 
 .DevPortal__articleListItem {
   margin-bottom: 20px;
+  .DevPortal__articleLink {
+    hyphens: auto;
+  }
 }
 
 .DevPortal__articleLink {
   color: black;
   text-decoration: underline;
-  hyphens: auto;
 
   &:hover {
     color: $primary_green;

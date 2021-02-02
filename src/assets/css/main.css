@@ -392,7 +392,7 @@ p a:hover {
 }
 
 .DevPortal__img {
-  background-image: url("../images/Hero_Road.jpg");
+  background-image: url("../images/Hero_Portal.jpg");
   height: 500px;
   width: 100%;
   margin-top: 28px;
@@ -487,11 +487,13 @@ p a:hover {
 .DevPortal__articleListItem {
   margin-bottom: 20px;
 }
+.DevPortal__articleListItem .DevPortal__articleLink {
+  hyphens: auto;
+}
 
 .DevPortal__articleLink {
   color: black;
   text-decoration: underline;
-  hyphens: auto;
 }
 .DevPortal__articleLink:hover {
   color: #26e990;
