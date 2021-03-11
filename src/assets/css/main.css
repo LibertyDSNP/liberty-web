@@ -520,6 +520,23 @@ p a:hover {
   }
 }
 
+.CodeOfConduct__mainBlock {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+@media (max-width: 991px) {
+  .CodeOfConduct__mainBlock {
+    max-width: 75vw;
+  }
+}
+@media (max-width: 767px) {
+  .CodeOfConduct__mainBlock {
+    max-width: 90vw;
+  }
+}
+
 .nav__h4 {
   max-width: 960px;
   width: 100%;
